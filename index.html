@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Aniket — Software Engineer</title>
+  <meta name="description" content="Adarsh Aniket — Software Engineer at Kantar. Frontend architecture, React, TypeScript, Node.js, AWS." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">AA</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <span class="theme-icon">◐</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Bangalore, India</p>
+        <h1 class="reveal">Adarsh Aniket</h1>
+        <p class="lede reveal">
+          Software Engineer at <strong>Kantar</strong>, building analytics platforms end to end —
+          modular React frontends, GenAI experiences, and event-driven backends on AWS.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#experience">See my work</a>
+          <a class="btn" href="mailto:adarshaniket28@gmail.com">Get in touch</a>
+        </div>
+        <ul class="hero-meta reveal">
+          <li><a href="http://www.adarshaniket.com" target="_blank" rel="noopener">adarshaniket.com</a></li>
+          <li><a href="mailto:adarshaniket28@gmail.com">adarshaniket28@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title reveal"><span>01</span> About</h2>
+        <div class="about-body reveal">
+          <h3 class="statement">I build software that is simple to use and built to last.</h3>
+          <p class="lede-sm">I build reliable, scalable software from frontend to backend.</p>
+        </div>
+
+        <h3 class="sub-head reveal">What I can help with</h3>
+        <ul class="capabilities">
+          <li class="capability reveal">
+            <h4>Frontend &amp; UI Systems</h4>
+            <p>Build polished, accessible interfaces and reusable component systems that are easy to maintain and scale.</p>
+          </li>
+          <li class="capability reveal">
+            <h4>Product Engineering</h4>
+            <p>Take a product from idea to production, making the right technical decisions along the way without overengineering it.</p>
+          </li>
+          <li class="capability reveal">
+            <h4>Technical Architecture</h4>
+            <p>Design the structure of a product across frontend, backend, data, and infrastructure, with a focus on keeping systems simple, reliable, and easy to evolve.</p>
+          </li>
+          <li class="capability reveal">
+            <h4>Performance</h4>
+            <p>Find and fix bottlenecks that make applications slow — from rendering and data fetching to architecture and infrastructure.</p>
+          </li>
+          <li class="capability reveal">
+            <h4>Backend &amp; APIs</h4>
+            <p>Design APIs, data models, and backend services that support reliable products and can evolve as the product grows.</p>
+          </li>
+          <li class="capability reveal">
+            <h4>AI-powered Products</h4>
+            <p>Build practical AI features that integrate naturally into existing products — from AI interfaces and workflows to tools and agent integrations.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title reveal"><span>02</span> Experience</h2>
+
+        <div class="job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="job-org">Kantar · Bangalore, India</p>
+            </div>
+            <span class="chip">Jul 2023 — Present</span>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Filter work by area">
+            <button class="filter is-active" data-filter="all">All</button>
+            <button class="filter" data-filter="frontend">Frontend</button>
+            <button class="filter" data-filter="ai">AI</button>
+            <button class="filter" data-filter="backend">Backend</button>
+          </div>
+
+          <ul class="cards">
+            <li class="card" data-tags="frontend">
+              <h4>Modular UI Architecture</h4>
+              <p>Built a reusable component system on Material-UI with custom shared components, integrated Storybook for development and documentation, and aligned implementations with the product design system for consistency, reusability, and scalability across analytics workflows.</p>
+              <div class="tags"><span>React</span><span>Material-UI</span><span>Storybook</span></div>
+            </li>
+            <li class="card" data-tags="frontend">
+              <h4>Simulation Dashboard</h4>
+              <p>An interactive dashboard letting users evaluate "what-if" marketing scenarios and predict KPI impact through charts, tables, and cards.</p>
+              <div class="tags"><span>React</span><span>D3.js</span><span>Redux</span></div>
+            </li>
+            <li class="card" data-tags="ai frontend">
+              <h4>GenAI Analytics Assistant</h4>
+              <p>Built an AI analytics chat assistant end to end — conversational state, persisted paginated history, API integration, Redux workflows, and a typed block-renderer architecture mapping AI response blocks to reusable Markdown and D3 visualization components.</p>
+              <div class="tags"><span>GenAI</span><span>TypeScript</span><span>D3.js</span></div>
+            </li>
+            <li class="card" data-tags="frontend">
+              <h4>Media Insights Performance</h4>
+              <p>Improved a hierarchical table handling ~10,000 rows: converted recursive rendering into a flat visible-row structure with virtualization, moved SWR fetching from rows to the parent, and optimized React reconciliation — <strong>~9 minutes → 54 seconds</strong>.</p>
+              <div class="tags"><span>Virtualization</span><span>SWR</span><span>Profiling</span></div>
+            </li>
+            <li class="card" data-tags="frontend">
+              <h4>TypeScript Migration</h4>
+              <p>Raised codebase coverage from ~30% to 95%, introducing stronger type safety across API responses, Redux state, and reusable React components while improving maintainability.</p>
+              <div class="tags"><span>TypeScript</span><span>Redux Toolkit</span></div>
+            </li>
+            <li class="card" data-tags="backend">
+              <h4>Backend Architecture</h4>
+              <p>Architected backend services in Node.js and Go on AWS (S3, SQS, Lambda, DynamoDB, PostgreSQL), defining APIs, metadata models, and event-driven workflows for onboarding, activation, output retrieval, and model lifecycle management.</p>
+              <div class="tags"><span>Node.js</span><span>Go</span><span>AWS</span></div>
+            </li>
+            <li class="card" data-tags="backend">
+              <h4>Model Lifecycle APIs</h4>
+              <p>Designed lifecycle and metadata APIs across 4 model flows — portfolio, long-term, combined, and brand-level analytics — with backward-compatible metadata and migration support for new admin, prediction, and overview experiences.</p>
+              <div class="tags"><span>API Design</span><span>Migrations</span></div>
+            </li>
+            <li class="card" data-tags="backend">
+              <h4>Role-Based Access Control</h4>
+              <p>Defined and implemented RBAC for an analytics admin surface, expanding a 2-role model to 7 role profiles with multi-organization access — launched with zero post-release bugs or user queries.</p>
+              <div class="tags"><span>RBAC</span><span>Multi-tenant</span></div>
+            </li>
+            <li class="card" data-tags="ai backend">
+              <h4>MCP Server</h4>
+              <p>Built an MCP server over existing platform APIs, turning backend capabilities into discoverable, reusable tools for AI clients so users can interact with analytics through an agent.</p>
+              <div class="tags"><span>MCP</span><span>Agents</span><span>Node.js</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="section-title reveal"><span>03</span> Projects</h2>
+        <article class="project reveal">
+          <div class="project-body">
+            <h3>DOM Lab</h3>
+            <p class="project-sub">Interactive platform for learning browser and DOM internals</p>
+            <ul class="ticks">
+              <li>Learn by progressively building core DOM primitives from scratch.</li>
+              <li>Implements the browser object hierarchy — <code>EventTarget</code>, <code>Node</code>, <code>Element</code>, <code>HTMLElement</code>, <code>Document</code>, and <code>Window</code>.</li>
+              <li>Hands-on lessons showing how HTML is transformed into a DOM tree and how browser APIs are structured.</li>
+            </ul>
+            <div class="tags"><span>JavaScript</span><span>React</span><span>Education</span></div>
+          </div>
+          <div class="project-visual" aria-hidden="true">
+            <pre class="tree">EventTarget
+└── Node
+    ├── Document
+    ├── Element
+    │   └── HTMLElement
+    └── Text</pre>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title reveal"><span>04</span> Skills</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <div class="pills"><span>JavaScript</span><span>TypeScript</span><span>C++</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <div class="pills"><span>React</span><span>Redux Toolkit</span><span>D3.js</span><span>SWR</span><span>Material-UI</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend &amp; Cloud</h3>
+            <div class="pills"><span>Node.js</span><span>Express</span><span>AWS</span><span>S3</span><span>SQS</span><span>Lambda</span><span>DynamoDB</span><span>PostgreSQL</span><span>RDS</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Tools &amp; Testing</h3>
+            <div class="pills"><span>Git</span><span>Jest</span><span>React Testing Library</span><span>Webpack</span><span>Vite</span><span>Npm</span><span>Yarn</span><span>Figma</span></div>
+          </div>
+        </div>
+
+        <div class="education reveal">
+          <h3>Education</h3>
+          <div class="edu-row">
+            <div>
+              <strong>National Institute of Technology</strong>
+              <p>B.Tech in Civil Engineering · CGPA 8.61</p>
+            </div>
+            <div class="edu-meta">
+              <span>Silchar, Assam, India</span>
+              <span>Jul 2019 — May 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <h2 class="section-title reveal"><span>05</span> Contact</h2>
+        <p class="big-text reveal">Open to interesting problems in frontend architecture, performance, and applied AI.</p>
+        <div class="contact-links reveal">
+          <a class="contact-card" href="mailto:adarshaniket28@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">adarshaniket28@gmail.com</span>
+          </a>
+          <a class="contact-card" href="http://www.adarshaniket.com" target="_blank" rel="noopener">
+            <span class="contact-label">Website</span>
+            <span class="contact-value">adarshaniket.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Adarsh Aniket</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
